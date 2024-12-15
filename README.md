@@ -1,9 +1,8 @@
 <<<<<<< Updated upstream
 #Mi Portafolio
 
-<p></p>
 "MarcosDev" 
- MarcosDev
+ 
 =======
 # 👨🏻‍💻 Porfolio MarcosDev
 
