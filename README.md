@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #Mi Portafolio
 
 "MarcosDev" 
@@ -22,6 +23,26 @@ Soy un desarrollador apasionado por crear experiencias web modernas y rápidas. 
 
 Me encanta crear sitios web rápidos y optimizados para la mejor experiencia de usuario posible. Si te gustan las páginas rápidas y con un diseño limpio, ¡estás en el lugar correcto!
 
+=======
+# 👨🏻‍💻 Porfolio MarcosDev
+
+# ¡Hola! 👋 Soy Marcos Antonio Castro Muñoz - Desarrollador Web
+
+Bienvenido a mi portafolio. Soy un desarrollador/a web especializado/a en la creación de sitios rápidos, optimizados y hermosos utilizando **Astro**, **Tailwind CSS**, **Flowbite** y **más**. Aquí podrás encontrar algunos de mis proyectos más destacados.
+
+## 🚀 Acerca de mí
+
+Soy un desarrollador apasionado por crear experiencias web modernas y rápidas. Mis principales áreas de experiencia incluyen:
+
+- **Astro**: Framework para construir sitios estáticos optimizados y rápidos.
+- **Tailwind CSS**: Framework de diseño para crear interfaces responsivas y personalizables.
+- **Flowbite**: Librería de componentes de interfaz de usuario basada en Tailwind CSS, para acelerar el desarrollo y crear interfaces atractivas.
+- **Frontend**: HTML, CSS, JavaScript, Astro.
+- **Backend**: Node.js.
+
+Me encanta crear sitios web rápidos y optimizados para la mejor experiencia de usuario posible. Si te gustan las páginas rápidas y con un diseño limpio, ¡estás en el lugar correcto!
+
+>>>>>>> Stashed changes
 ---
 
 ## 📂 Proyectos Destacados
@@ -62,4 +83,7 @@ Me encanta crear sitios web rápidos y optimizados para la mejor experiencia de 
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
