@@ -1,13 +1,14 @@
 ---
 import Tailwind from "./icons/Tailwind.astro"
+import Astros from "./icons/Astros.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "astro",
+  ASTRO: {
+    name: "Astro",
     class: "bg-black text-white",
-    icon: Astro,
+    icon: Astros,
   },
   TAILWIND: {
     name: "Tailwind CSS",
@@ -17,50 +18,64 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: "",
+    title: "CyberNet",
     description:
-      "",
-    link: "",
-    github: "l",
-    image: "",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Una oportunidad para aprender muchas cosas en general como programacion, haking Etico, secundaria educativa y videos educativos e entretenidos, con regalias de cuentas de diferentes aplicaciones pro o premium, MarcosDev.",
+    link: "https://www.appcreator24.com/app2900215-ud5wpr",
+    github: "",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVaXn2XPyN1uczKzp11aSfkXpwx3Di6SH63LRVBAHULkPKNpMpgs6AC3fz5ZMpprMFwdozWey86utYFRqhYPgT1FS2HDmLwYNrOhl0p9jbJrl-bxhJTDnjF9nJYTnD6AloN3kPEDF0KtvDnffDqUCpoVw3i6kpqZQAbmVkwfmMSRvXAalU8UmSj66lX8I/s1600/2900215_ico.png",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
   },
   {
-    title: "",
+    title: "AnimationMath",
     description:
-      "",
-    link: "",
-    image: "",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Sumergete en lo maravilloso de la tecnología con modulos educativos divertidos, interactivos y con una interfaz grafica amigable, contiene modulos con animaciones 3D de problemas matematicos.",
+    link: "https://www.appcreator24.com/app3157657-apy328",
+    image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4wYFo7ACXQQ6mFap8kEsgofp1Ya3spNj54qbkLJwzcsE-a91kYFzaEXuo0SjlteLPnj0w1WdK81v6V-VOzgEVVKHAaHz0u4Mx0bV9shxFitvp8IikEUNw1xFk0MwIrh_sSEAYjnqMB0WF0Ftzy1sFJddVFvy2Da4XHEfpXHSmmtX5MCcwVRBYz0ZvByw/s1600/3157657_ico.png",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND],
   },
 ]
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+    PROJECTS.map(({ image, title, description, tags, link }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-96 md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img alt="Un chino quee" class="object-cover object-top w-auto h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-     
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                    {tag.icon && <tag.icon class="size-4" />} {/* Renderiza el ícono si existe */}
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-     
-    </div>
-  </div>
-</article>
+            <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
     ))
   }
 </div>
-
-
 
